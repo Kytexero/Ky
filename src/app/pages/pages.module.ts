@@ -3,9 +3,11 @@ import { CommonModule } from '@angular/common';
 import { HomeModule } from './home/home.module';
 import { PagesRoutingModule } from './pages-routing.module';
 import { OurworkComponent } from './ourwork/ourwork.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
-  declarations: [ OurworkComponent],
+  declarations: [ OurworkComponent, LoginComponent, RegisterComponent],
   imports: [
     CommonModule, 
     HomeModule,
