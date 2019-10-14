@@ -423,7 +423,7 @@ iframe {
   .navbar-custom {
     margin-top: 0px;
     padding: 10px 0px;
-    background-color: #272a33;
+    background-color: #332729;
     -moz-box-shadow: 0 10px 33px rgba(0, 0, 0, 0.1);
     -webkit-box-shadow: 0 10px 33px rgba(0, 0, 0, 0.1);
     box-shadow: 0 10px 33px rgba(0, 0, 0, 0.1);
@@ -438,27 +438,27 @@ iframe {
 .nav {
   .open {
     > a {
-      background-color: transparent;
+      background-color: blue;
       border-color: #337ab7;
       &:focus {
         background-color: transparent;
         border-color: #337ab7;
       }
       &:hover {
-        background-color: transparent;
+        background-color: blue;
         border-color: #337ab7;
       }
     }
   }
 }
 .navbar-custom.navbar-white {
-  background-color: #fff;
+  background-color: #000000;
   padding: 10px 0;
   box-shadow: 0 10px 33px rgba(0, 0, 0, 0.1);
   .navbar-nav {
     li {
       a {
-        color: #393f4f !important;
+        color: #000000 !important;
       }
     }
   }
