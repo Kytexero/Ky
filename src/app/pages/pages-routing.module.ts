@@ -3,13 +3,16 @@ import { Routes, RouterModule } from '@angular/router';
 import { OurworkComponent } from './ourwork/ourwork.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { SignInComponent } from 'src/app/components/sign-in/sign-in.component';
+import { SignUpComponent } from 'src/app/components/sign-up/sign-up.component';
 
 const routes: Routes = [
   { path: '', loadChildren: './home/home.module#HomeModule' },
 
-  {path: 'ourwork', component: OurworkComponent},
+  { path: 'sign-in', component: SignInComponent, },
+  { path: 'register-user', component: SignUpComponent,  },
   {path: 'login', component: LoginComponent},
-  {path: 'register', component: RegisterComponent}
+
 ];
 
 @NgModule({

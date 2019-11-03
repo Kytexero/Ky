@@ -6,13 +6,30 @@ import { OurworkComponent } from './ourwork/ourwork.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { Newpage2Component } from './newpage2/newpage2.component';
+import { SignInComponent } from 'src/app/components/sign-in/sign-in.component';
 
+import { SignUpComponent } from 'src/app/components/sign-up/sign-up.component';
+
+import { AngularFireModule } from "@angular/fire";
+import { AngularFireAuthModule } from "@angular/fire/auth";
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { environment } from 'src/environments/environment';
+import { AuthService } from '../services/auth.service';
 @NgModule({
-  declarations: [ OurworkComponent, LoginComponent, RegisterComponent, Newpage2Component],
+  declarations: [ OurworkComponent, LoginComponent, RegisterComponent, Newpage2Component, SignInComponent, SignUpComponent],
   imports: [
     CommonModule, 
     HomeModule,
-    PagesRoutingModule
-  ]
+    PagesRoutingModule,
+    
+    AngularFireAuthModule,
+    AngularFirestoreModule,
+    AngularFireModule.initializeApp(environment.firebase),    
+
+  ],
+
+  providers: [
+    AuthService
+  ],
 })
 export class PagesModule { }
