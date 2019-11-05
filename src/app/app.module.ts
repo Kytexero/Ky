@@ -5,16 +5,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LayoutModule } from './layout/layout.module';
-import { DashboardComponent } from './components/dashboard/dashboard.component';
-import { ForgotPasswordComponent } from './components/forgot-password/forgot-password.component';
-import { VerifyEmailComponent } from './components/verify-email/verify-email.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    DashboardComponent,
-    ForgotPasswordComponent,
-    VerifyEmailComponent,
+ 
   ],
   imports: [
     BrowserModule,
